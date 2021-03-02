@@ -10,7 +10,6 @@
 }
 
 .showcase {
-  border: 1px solid red;
   position: absolute;
   right: 0;
   width: 100%;
@@ -31,12 +30,11 @@
 }
 
 .showcase header {
-  border: 1px solid green;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 40px 40px;
   z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,7 +48,7 @@
 }
 
 .showcase .logo {
-  border: 1px solid yellow;
+  border: 8px solid yellow;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -81,8 +79,37 @@
   z-index: 10;
 }
 
+.showcase .text h2 {
+  font-size: 5em;
+  font-weight: 800;
+  line-height: 1em;
+}
+
+.showcase .text h3 {
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.showcase .text a {
+  display: inline-block;
+  font-size: 1em;
+  background: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: black;
+  margin-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.showcase .text a:hover {
+  letter-spacing: 5px;
+}
+
 .toggle {
-  border: 1px solid magenta;
+  border: 8px solid magenta;
   position: relative;
   width: 60px;
   height: 60px;
