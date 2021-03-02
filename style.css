@@ -108,6 +108,41 @@
   letter-spacing: 5px;
 }
 
+.showcase .social {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.showcase .social li {
+  list-style: none;
+}
+
+.showcase .social li a {
+  display: inline-block;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  margin-right: 10px;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.showcase .social li a:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
 .toggle {
   border: 8px solid magenta;
   position: relative;
@@ -123,5 +158,17 @@
   background: url(https://i.ibb.co/rt3HybH/close.png) no-repeat;
   background-size: 25px;
   background-position: center;
+}
+
+@media (max-width: 1000px) {
+  .showcase, .showcase header {
+    padding: 20px;
+  }
+  .showcase .text h2 {
+    font-size: 3em;
+  }
+  .showcase .text h3 {
+    font-size: 1em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
