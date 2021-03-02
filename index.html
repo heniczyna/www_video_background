@@ -12,7 +12,8 @@
 <body>
     <section class="showcase">
         <header>
-            <h2 class="logo">Travel</h2>
+            <h2 class="logo"></h2>
+            <!-- <h2 class="logo">Travel</h2> -->
             <div class="toggle"></div>
         </header>
         <video src="explore.mp4" muted loop autoplay></video>
@@ -38,5 +39,18 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
+
+    <script>
+        const menuToggle = document.querySelector(".toggle");
+        const showcase = document.querySelector(".showcase");
+
+        menuToggle.addEventListener("click", function(){
+            menuToggle.classList.toggle("active");
+            showcase.classList.toggle("active");
+        })
+    </script>
+
+
+
 </body>
 </html>
